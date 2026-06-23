@@ -22,7 +22,7 @@ function Projects() {
 
           <div className="project-links">
             <a
-              href="https://solar-max.vercel.app"
+              href="https://solar-max-nexw.vercel.app"
               target="_blank"
               rel="noreferrer"
             >
