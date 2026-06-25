@@ -111,7 +111,7 @@ function Hero() {
         <div className="hero-stats">
 
           <div>
-            <h3>7+</h3>
+            <h3>20+</h3>
             <p>Projects</p>
           </div>
 
