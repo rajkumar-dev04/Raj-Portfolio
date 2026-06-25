@@ -1,3 +1,4 @@
+import luxewear from "../assets/luxewear.png";
 import elorra from "../assets/elorra.png";
 import amazon from "../assets/amazon.png";
 import news from "../assets/news.png";
@@ -18,6 +19,23 @@ const projects = [
     github: "https://github.com/rajkumar-dev04/Ellora-Beauty-Co",
     featured: true,
   },
+  {
+  title: "LuxeWear Fashion",
+  image: luxewear,
+  category: "Luxury Fashion E-Commerce",
+  description:
+    "A premium fashion e-commerce website inspired by luxury brands. Built with React.js and Vite featuring a cinematic hero video, shopping cart, wishlist, quick view modal, product search, category filtering, responsive design, elegant animations, and a modern luxury shopping experience.",
+  tech: [
+    "React",
+    "Vite",
+    "JavaScript",
+    "CSS3",
+    "React Icons",
+  ],
+  live: "https://luxe-wear-fashion.vercel.app",
+  github: "https://github.com/rajkumar-dev04/LuxeWear-Fashion",
+  featured: true,
+},
   {
     title: "SolarMax",
     image: solarmax,
@@ -81,11 +99,14 @@ function Projects() {
     <section id="projects" className="section projects-section">
       <div className="section-heading">
         <span>My Work</span>
-        <h2>Featured Projects</h2>
-        <p>
-          A collection of responsive, modern and client-ready projects built
-          with React, JavaScript and clean UI design.
-        </p>
+        <h2>Crafting Digital Experiences</h2>
+
+<p>
+  A curated portfolio of premium web applications showcasing modern
+  UI/UX, responsive design, React development, and real-world
+  business solutions. Each project reflects my focus on performance,
+  usability, and visually engaging user experiences.
+</p>
       </div>
 
       <div className="projects">
