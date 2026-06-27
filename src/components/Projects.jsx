@@ -7,6 +7,7 @@ import textcraft from "../assets/textcraft.png";
 import urbanclap from "../assets/urbanclap.png";
 import rps from "../assets/rps.png";
 import solarmax from "../assets/solarmax.png";
+import jobflow from "../assets/jobflow.png";
 const projects = [
   {
     title: "Elorra Beauty Co.",
@@ -36,6 +37,24 @@ const projects = [
   ],
   live: "https://nova-ai-workspace-one.vercel.app",
   github: "https://github.com/rajkumar-dev04/Nova-AI-Workspace",
+  featured: true,
+},
+{
+  title: "JobFlow AI",
+  image: jobflow,
+  category: "AI Job Application Tracker",
+  description:
+    "A modern AI-powered job application tracker built with React.js and Vite. Features a Kanban job board, application dashboard, AI cover letter writer, resume manager, interview preparation section, analytics charts, responsive design, and a premium SaaS-inspired interface.",
+  tech: [
+    "React",
+    "Vite",
+    "JavaScript",
+    "CSS3",
+    "React Icons",
+    "Recharts",
+  ],
+  live: "https://job-flow-ai-eight.vercel.app",
+  github: "https://github.com/rajkumar-dev04/JobFlow-AI",
   featured: true,
 },
   {
