@@ -1,3 +1,4 @@
+import nova from "../assets/nova.png";
 import luxewear from "../assets/luxewear.png";
 import elorra from "../assets/elorra.png";
 import amazon from "../assets/amazon.png";
@@ -6,7 +7,6 @@ import textcraft from "../assets/textcraft.png";
 import urbanclap from "../assets/urbanclap.png";
 import rps from "../assets/rps.png";
 import solarmax from "../assets/solarmax.png";
-
 const projects = [
   {
     title: "Elorra Beauty Co.",
@@ -19,6 +19,25 @@ const projects = [
     github: "https://github.com/rajkumar-dev04/Ellora-Beauty-Co",
     featured: true,
   },
+  {
+  title: "Nova AI Workspace",
+  image: nova,
+  category: "AI Productivity SaaS Dashboard",
+  description:
+    "A modern AI-powered productivity dashboard built with React.js and Vite. Features a Gemini AI chatbot, smart notes, task management, productivity analytics, interactive charts, responsive design, elegant animations, and a premium SaaS-inspired user interface for enhanced workflow and productivity.",
+  tech: [
+    "React",
+    "Vite",
+    "JavaScript",
+    "CSS3",
+    "Gemini API",
+    "React Icons",
+    "Recharts",
+  ],
+  live: "https://nova-ai-workspace-one.vercel.app",
+  github: "https://github.com/rajkumar-dev04/Nova-AI-Workspace",
+  featured: true,
+},
   {
   title: "LuxeWear Fashion",
   image: luxewear,
