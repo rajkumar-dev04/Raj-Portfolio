@@ -9,101 +9,211 @@ import {
   FaServer,
   FaCode,
   FaLaptopCode,
+  FaWordpress,
+  FaNodeJs,
 } from "react-icons/fa";
 
+import {
+  SiTypescript,
+  SiTailwindcss,
+  SiMui,
+  SiExpress,
+  SiMongodb,
+  SiMysql,
+  SiShopify,
+  SiNpm,
+  SiVite,
+} from "react-icons/si";
+
 function Skills() {
+  const getWidth = (level) => {
+    switch (level) {
+      case "Advanced":
+        return "90%";
+      case "Intermediate":
+        return "70%";
+      default:
+        return "50%";
+    }
+  };
+
   const skills = [
-    { icon: <FaHtml5 />, name: "HTML5", level: "95%" },
-    { icon: <FaCss3Alt />, name: "CSS3", level: "92%" },
-    { icon: <FaJs />, name: "JavaScript", level: "90%" },
-    { icon: <FaReact />, name: "React.js", level: "90%" },
-    { icon: <FaBootstrap />, name: "Bootstrap", level: "88%" },
-    { icon: <FaGitAlt />, name: "Git", level: "85%" },
-    { icon: <FaGithub />, name: "GitHub", level: "90%" },
-    { icon: <FaServer />, name: "REST APIs", level: "85%" },
+    {
+      icon: <FaHtml5 />,
+      name: "HTML5",
+      level: "Advanced",
+    },
+    {
+      icon: <FaCss3Alt />,
+      name: "CSS3",
+      level: "Advanced",
+    },
+    {
+      icon: <FaJs />,
+      name: "JavaScript (ES6+)",
+      level: "Advanced",
+    },
+    {
+      icon: <SiTypescript />,
+      name: "TypeScript",
+      level: "Advanced",
+    },
+    {
+      icon: <FaReact />,
+      name: "React.js",
+      level: "Advanced",
+    },
+    {
+      icon: <SiTailwindcss />,
+      name: "Tailwind CSS",
+      level: "Advanced",
+    },
+    {
+      icon: <FaBootstrap />,
+      name: "Bootstrap",
+      level: "Advanced",
+    },
+    {
+      icon: <SiMui />,
+      name: "Material UI",
+      level: "Intermediate",
+    },
+    {
+      icon: <FaNodeJs />,
+      name: "Node.js",
+      level: "Advanced",
+    },
+    {
+      icon: <SiExpress />,
+      name: "Express.js",
+      level: "Intermediate",
+    },
+    {
+      icon: <FaServer />,
+      name: "REST APIs",
+      level: "Advanced",
+    },
+    {
+      icon: <SiMongodb />,
+      name: "MongoDB",
+      level: "Intermediate",
+    },
+    {
+      icon: <SiMysql />,
+      name: "MySQL",
+      level: "Advanced",
+    },
+    {
+      icon: <FaWordpress />,
+      name: "WordPress",
+      level: "Advanced",
+    },
+    {
+      icon: <SiShopify />,
+      name: "Shopify",
+      level: "Intermediate",
+    },
+    {
+      icon: <FaGitAlt />,
+      name: "Git",
+      level: "Advanced",
+    },
+    {
+      icon: <FaGithub />,
+      name: "GitHub",
+      level: "Advanced",
+    },
+    {
+      icon: <SiNpm />,
+      name: "NPM",
+      level: "Advanced",
+    },
+    {
+      icon: <SiVite />,
+      name: "Vite",
+      level: "Advanced",
+    },
+    {
+      icon: <FaCode />,
+      name: "VS Code",
+      level: "Advanced",
+    },
   ];
 
   return (
     <section id="skills" className="section skills-section">
-
       <div className="section-heading">
-        <span>Technical Skills</span>
-        <h2>Technologies I Work With</h2>
+        <span>My Expertise</span>
+
+        <h2>Technologies & Tools I Use</h2>
+
         <p>
-          I specialize in building responsive, modern and user-friendly web
-          applications using the latest frontend technologies.
+          I build modern, responsive and scalable web applications using
+          frontend technologies, clean code practices and industry-standard
+          development tools.
         </p>
       </div>
 
       <div className="skills-layout">
-
+        {/* Skills List */}
         <div className="skills-left">
-
           {skills.map((skill, index) => (
             <div className="skill-item" key={index}>
-
               <div className="skill-top">
-
                 <div className="skill-name">
-                  {skill.icon}
+                  <span className="skill-icon">{skill.icon}</span>
                   <span>{skill.name}</span>
                 </div>
 
-                <span>{skill.level}</span>
-
+                <span className="skill-level">{skill.level}</span>
               </div>
 
               <div className="progress">
                 <div
                   className="progress-fill"
-                  style={{ width: skill.level }}
+                  style={{ width: getWidth(skill.level) }}
                 ></div>
               </div>
-
             </div>
           ))}
-
         </div>
 
+        {/* Skill Cards */}
         <div className="skills-right">
-
           <div className="skill-card">
             <FaLaptopCode />
 
             <h3>Frontend Development</h3>
 
             <p>
-              Building responsive and interactive user interfaces using
-              React.js, JavaScript and modern CSS.
+              Creating responsive and interactive user interfaces using
+              React.js, JavaScript, HTML, CSS and modern UI libraries.
             </p>
           </div>
 
           <div className="skill-card">
             <FaCode />
 
-            <h3>Clean Code</h3>
+            <h3>Component Based Coding</h3>
 
             <p>
-              Writing reusable components, maintainable code and scalable
-              frontend applications.
+              Developing reusable React components with clean structure,
+              optimized performance and maintainable code.
             </p>
           </div>
 
           <div className="skill-card">
             <FaServer />
 
-            <h3>API Integration</h3>
+            <h3>API & Data Handling</h3>
 
             <p>
-              Connecting frontend applications with REST APIs and handling
-              dynamic data efficiently.
+              Integrating REST APIs, managing dynamic data and connecting
+              frontend applications with backend services.
             </p>
           </div>
-
         </div>
-
       </div>
-
     </section>
   );
 }

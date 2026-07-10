@@ -15,29 +15,34 @@ function About() {
 
         {/* Left Card */}
 
-        <div className="about-card">
+  <div className="about-card">
 
-          <h3>Who I Am</h3>
+  <h3>Who I Am</h3>
 
-          <p>
-            Hi, I'm <strong>Raj Kumar</strong>, a passionate Frontend Developer
-            specializing in HTML, CSS, JavaScript, React.js and modern web
-            technologies.
-          </p>
+  <p>
+    Hi, I'm <strong>Raj Kumar</strong>, a passionate Frontend Developer dedicated to
+    building modern, responsive, and high-performance web applications.
+    I specialize in <strong>React.js, JavaScript, TypeScript, WordPress.</strong>,
+    transforming ideas into intuitive digital experiences with clean code,
+    scalable architecture, and user-centric design.
+  </p>
 
-          <p>
-            I enjoy transforming ideas into beautiful, responsive and
-            user-friendly websites that deliver excellent user experiences
-            across all devices.
-          </p>
+  <p>
+    I enjoy developing AI-powered applications, business websites,
+    enterprise dashboards, SaaS platforms, and e-commerce solutions that
+    combine functionality with visually appealing interfaces. My focus is on
+    creating fast, accessible, and engaging products that deliver real value
+    to both businesses and users.
+  </p>
 
-          <p>
-            I continuously learn new technologies and focus on writing clean,
-            maintainable and scalable code while following modern development
-            practices.
-          </p>
+  <p>
+    Currently, I work as a <strong>Web Developer at The Grow Biz</strong>, where I
+    collaborate on client projects, develop responsive web applications,
+    customize WordPress and Shopify websites, and build scalable digital
+    solutions for businesses across various industries.
+  </p>
 
-        </div>
+</div>
 
         {/* Right Card */}
 

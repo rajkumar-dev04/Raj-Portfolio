@@ -1,3 +1,5 @@
+import buildflow from "../assets/buildflow.png";
+import geminimotors from "../assets/geminimotors.png";
 import nova from "../assets/nova.png";
 import luxewear from "../assets/luxewear.png";
 import elorra from "../assets/elorra.png";
@@ -9,6 +11,42 @@ import rps from "../assets/rps.png";
 import solarmax from "../assets/solarmax.png";
 import jobflow from "../assets/jobflow.png";
 const projects = [
+  {
+  title: "BuildFlow Pro",
+  image: buildflow,
+  category: "Enterprise Construction Management SaaS",
+  description:
+    "A premium enterprise SaaS platform built for construction companies to manage clients, projects, employees, inventory, finances, invoices, reports, analytics, and team collaboration through a modern dashboard. Designed with a professional UI, responsive layouts, interactive charts, Kanban boards, and business-focused workflows.",
+  tech: [
+    "React",
+    "TypeScript",
+    "Vite",
+    "Tailwind CSS",
+    "React Router",
+    "Recharts",
+    "Framer Motion"
+  ],
+  live: "https://YOUR-BUILDFLOW.vercel.app",
+  github: "https://github.com/rajkumar-dev04/buildflow-pro",
+  featured: true,
+},
+{
+  title: "Gemini Motors",
+  image: geminimotors,
+  category: "Commercial Vehicle & Logistics Website",
+  description:
+    "A premium corporate website developed for a commercial vehicle and logistics company. Features an elegant UI, fleet showcase, vehicle categories, responsive layouts, contact forms, business information, and a modern user experience focused on customer engagement.",
+  tech: [
+    "React",
+    "TypeScript",
+    "Vite",
+    "Tailwind CSS",
+    "Framer Motion"
+  ],
+  live: "https://YOUR-GEMINI-MOTORS.vercel.app",
+  github: "https://github.com/rajkumar-dev04/gemini-motors",
+  featured: true,
+},
   {
     title: "Elorra Beauty Co.",
     image: elorra,
@@ -137,13 +175,16 @@ function Projects() {
     <section id="projects" className="section projects-section">
       <div className="section-heading">
         <span>My Work</span>
-        <h2>Crafting Digital Experiences</h2>
+        <h2>Featured Projects & Real-World Applications</h2>
 
 <p>
-  A curated portfolio of premium web applications showcasing modern
-  UI/UX, responsive design, React development, and real-world
-  business solutions. Each project reflects my focus on performance,
-  usability, and visually engaging user experiences.
+  <p>
+Explore a collection of enterprise SaaS platforms, AI-powered applications,
+e-commerce experiences, and commercial business websites built using modern
+web technologies. Each project demonstrates my ability to design scalable,
+responsive, and production-ready solutions with a strong focus on performance,
+user experience, and clean architecture.
+</p>
 </p>
       </div>
 

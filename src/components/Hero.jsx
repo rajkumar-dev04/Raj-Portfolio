@@ -14,27 +14,32 @@ import {
 function Hero() {
   return (
     <section id="home" className="hero">
-
+      {/* LEFT SIDE */}
       <div className="hero-left">
 
         <div className="hero-badge">
-          🚀 Available for Frontend Developer Opportunities
+          <span className="badge-dot"></span>
+          Available for Frontend Developer Roles & Freelance Projects
         </div>
 
-        <h1>
-          Hi, I'm <span>Raj Kumar</span>
+        <span className="hero-greeting">
+          👋 Hello, I'm
+        </span>
+
+        <h1 className="hero-title">
+          Raj <span>Kumar</span>
         </h1>
 
         <TypeAnimation
           sequence={[
             "Frontend Developer",
-            1800,
-            "React Developer",
-            1800,
+            2000,
+            "React.js Developer",
+            2000,
             "JavaScript Developer",
-            1800,
-            "UI Developer",
-            1800,
+            2000,
+            "Building Modern Web Experiences",
+            2000,
           ]}
           wrapper="h2"
           speed={45}
@@ -42,93 +47,131 @@ function Hero() {
           className="typing-text"
         />
 
-        <p>
-          Passionate Frontend Developer specializing in React.js, JavaScript,
-          and responsive web applications. I enjoy building modern,
-          user-focused websites with clean code, smooth animations, and
-          premium user experiences.
+        <p className="hero-description">
+          Frontend Developer with hands-on experience building modern React
+          applications, AI-powered platforms, enterprise dashboards, and
+          business websites. I create fast, responsive, and visually engaging
+          digital experiences with clean code, scalable architecture, and
+          exceptional user interfaces.
         </p>
 
         <div className="hero-buttons">
           <a href="#projects" className="btn">
-            View Projects <FaArrowRight />
+            Explore My Work
+            <FaArrowRight />
           </a>
 
-          <a href="/resume.pdf" className="btn outline" download>
+          <a
+            href="/resume.pdf"
+            download
+            className="btn outline"
+          >
             <FaDownload />
-            Resume
+            Download Resume
           </a>
         </div>
 
+        {/* Featured Project */}
+        <div className="featured-project-card">
+          <div className="featured-header">
+            <span>⭐ Featured Project</span>
+            <span className="project-status">● Live</span>
+          </div>
+
+          <h4>BuildFlow Pro</h4>
+
+          <p>
+            Enterprise Construction Management SaaS Platform featuring project
+            management, finance tracking, inventory, AI assistant, file
+            management, and analytics dashboard.
+          </p>
+        </div>
+
+        {/* Social Links */}
         <div className="hero-social">
+
           <a
             href="https://github.com/rajkumar-dev04"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
           >
             <FaGithub />
           </a>
 
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/raj-kumar-4a1a91218"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
           >
             <FaLinkedin />
           </a>
+
         </div>
 
       </div>
 
       <div className="hero-right">
 
-        <div className="profile-card">
+  <div className="profile-card">
 
-          <img
-            src={profile}
-            alt="Raj Kumar"
-            className="profile-img"
-          />
+    <div className="profile-ring"></div>
 
-          <div className="floating-icons react">
-            <FaReact />
-          </div>
+    <img
+      src={profile}
+      alt="Raj Kumar"
+      className="profile-img"
+    />
 
-          <div className="floating-icons js">
-            <FaJs />
-          </div>
+    <div className="profile-status">
+      <span className="status-dot"></span>
+      Available for Work
+    </div>
 
-          <div className="floating-icons html">
-            <FaHtml5 />
-          </div>
+    <div className="floating-icons react">
+      <FaReact />
+    </div>
 
-          <div className="floating-icons css">
-            <FaCss3Alt />
-          </div>
+    <div className="floating-icons js">
+      <FaJs />
+    </div>
 
-        </div>
+    <div className="floating-icons html">
+      <FaHtml5 />
+    </div>
 
-        <div className="hero-stats">
+    <div className="floating-icons css">
+      <FaCss3Alt />
+    </div>
 
-          <div>
-            <h3>20+</h3>
-            <p>Projects</p>
-          </div>
+  </div>
 
-          <div>
-            <h3>React</h3>
-            <p>Specialist</p>
-          </div>
+  <div className="hero-stats">
 
-          <div>
-            <h3>100%</h3>
-            <p>Responsive</p>
-          </div>
+    <div className="stat-card">
+      <h3>25+</h3>
+      <p>Projects Delivered</p>
+    </div>
 
-        </div>
+    <div className="stat-card">
+      <h3>10+</h3>
+      <p>Business Websites</p>
+    </div>
 
-      </div>
+    <div className="stat-card">
+      <h3>React</h3>
+      <p>Specialist</p>
+    </div>
 
+    <div className="stat-card">
+      <h3>100%</h3>
+      <p>Responsive UI</p>
+    </div>
+
+  </div>
+
+</div>
     </section>
   );
 }
