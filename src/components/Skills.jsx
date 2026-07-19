@@ -56,7 +56,7 @@ function Skills() {
     {
       icon: <SiTypescript />,
       name: "TypeScript",
-      level: "Advanced",
+      level: "intermediate",
     },
     {
       icon: <FaReact />,
@@ -73,11 +73,11 @@ function Skills() {
       name: "Bootstrap",
       level: "Advanced",
     },
-    {
-      icon: <SiMui />,
-      name: "Material UI",
-      level: "Intermediate",
-    },
+    // {
+    //   icon: <SiMui />,
+    //   name: "Material UI",
+    //   level: "Intermediate",
+    // },
     {
       icon: <FaNodeJs />,
       name: "Node.js",
@@ -93,26 +93,26 @@ function Skills() {
       name: "REST APIs",
       level: "Advanced",
     },
-    {
-      icon: <SiMongodb />,
-      name: "MongoDB",
-      level: "Intermediate",
-    },
-    {
-      icon: <SiMysql />,
-      name: "MySQL",
-      level: "Advanced",
-    },
-    {
-      icon: <FaWordpress />,
-      name: "WordPress",
-      level: "Advanced",
-    },
-    {
-      icon: <SiShopify />,
-      name: "Shopify",
-      level: "Intermediate",
-    },
+    // {
+    //   icon: <SiMongodb />,
+    //   name: "MongoDB",
+    //   level: "Intermediate",
+    // },
+    // {
+    //   icon: <SiMysql />,
+    //   name: "MySQL",
+    //   level: "Advanced",
+    // },
+    // {
+    //   icon: <FaWordpress />,
+    //   name: "WordPress",
+    //   level: "Advanced",
+    // },
+    // {
+    //   icon: <SiShopify />,
+    //   name: "Shopify",
+    //   level: "Intermediate",
+    // },
     {
       icon: <FaGitAlt />,
       name: "Git",
