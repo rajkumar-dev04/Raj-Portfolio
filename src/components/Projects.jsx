@@ -32,10 +32,10 @@ const projects = [
 },
 {
   title: "Gemini Motors",
+  category: "Client Project",
   image: geminimotors,
-  category: "Commercial Vehicle & Logistics Website",
   description:
-    "A premium corporate website developed for a commercial vehicle and logistics company. Features an elegant UI, fleet showcase, vehicle categories, responsive layouts, contact forms, business information, and a modern user experience focused on customer engagement.",
+    "Developed a premium, responsive website for Gemini Motors, an authorized Ashok Leyland dealer in Goa. Built with React, TypeScript, Vite, and Tailwind CSS, featuring modern UI, smooth animations, reusable components, and optimized performance for an engaging user experience.",
   tech: [
     "React",
     "TypeScript",
@@ -43,9 +43,17 @@ const projects = [
     "Tailwind CSS",
     "Framer Motion"
   ],
-  live: "https://YOUR-GEMINI-MOTORS.vercel.app",
-  github: "https://github.com/rajkumar-dev04/gemini-motors",
-  featured: true,
+  features: [
+    "Responsive Design",
+    "Modern UI/UX",
+    "Smooth Animations",
+    "Vehicle Showcase",
+    "Fuel Solutions",
+    "SEO Friendly",
+    "Performance Optimized"
+  ],
+  live: "https://gemini-motors.vercel.app",
+  github: "https://github.com/rajkumar-dev04/GEMINI_MOTORS"
 },
   {
     title: "Elorra Beauty Co.",
